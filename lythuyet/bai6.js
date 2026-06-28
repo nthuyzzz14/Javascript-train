@@ -16,9 +16,13 @@ let User = function (name, age, address) {
   };
 };
 
+//add them vao constructor Object
 User.prototype.class = "dep trai";
+User.prototype.getClass = function () {
+  return this.class;
+};
 
 let user1 = new User("Thuy", 19, "Yen Trach");
 let user2 = new User("Ngoc Anh", 19, "Bac Giang");
 
-console.log(user1);
+console.log(user1.getName());
